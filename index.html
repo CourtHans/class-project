@@ -1,58 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Courtney's Joke Page</title>
-  <!-- Building a simple wireframe - CH -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Courtney's Joke Page</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Building a simple wireframe - CH -->
 </head>
 
 <body>
-<header>
-    Header goes here
-    <img src="https://live.staticflickr.com/7869/46478994704_519cbb2012_b.jpg" alt="jokes are funny">
-    <nav>
-        <ul>
-            <li><a href="https://github.com/CourtHans" target="_blank">Courtney's GitHub</a></li>
-            <li>Hexx's class project page</li>
-            <li>Deanna's project page</li>
-            <li>Courtney's project page</li>
-        </ul>
-    </nav>
-    <img src="https://storage.needpix.com/rsynced_images/grin-303704_1280.png" alt="smiling face">
-</header>
+    <header>
+        <h1>Courtney's Joke Page</h1>
+        <img id="left-header-image" src="https://storage.needpix.com/rsynced_images/grin-303704_1280.png"
+            alt="smiling face">
+        <img id="right-header-image" src="https://storage.needpix.com/rsynced_images/grin-303704_1280.png"
+            alt="smiling face">
+        <nav>
+            <ul>
+                <li><a href="https://github.com/CourtHans" target="_blank">Courtney's GitHub</a></li>
+                <li><a href="https://hexxking.github.io/class-project/" target="blank">Hexx's project</a></li>
+                <li><a href="https://deannaj401.github.io/class-project/" target="blank">Deanna's project</li></a>
+            </ul>
+        </nav>
+    </header>
 
-<main>
-    <img src="https://storage.needpix.com/rsynced_images/ha-ha-writing.jpg" alt="ha ha">
-    <section>
-        <h3>Box 1 (left)</h3>
-        <p>Q: Where does a general keep his armies?
-            A: In his sleevies!
-        </p>
-    </section>
-    <section>
-        <h3>Box 2 (bottom middle)</h3>
-        <p>A grasshopper walked in to a bar. The bartender said "Hey! What do you know? We have a drink named after you!"
-            The grasshopper said, "Really? You have a drink named Carl?"
-        </p>
-    </section>
-    <section>
-        <h3>Box 3 (right)</h3>
-        <p>You don't need a parachute to go skydiving.
-            You need a parachute to go skydiving twice.
-        </p>
-    </section>
-</main> 
+    <main>
+        <section id="java">
+                <script src="js/add-greeting.js"></script>
+                <script src="js/add-name.js"></script>
+                <script src="js/add-question.js"></script>
+        </section>
 
-<footer>
-    <nav>
-        <ul>
-          <li><a href="mailto:cornta@yahoo.com" target="_blank">Email Courtney</a>
-          <li><a href="https://www.linkedin.com/in/courtney-hans" target="_blank">My LinkedIn</a></li>
-          <li>&copy; 2020 CHans</li>
-        </ul>
-      </nav>
-</footer>
+        <section class="column">
+            <h2>Joke 1</h2>
+            <h3>Grasshopper in a bar</h3>
+            <p>A grasshopper walked in to a bar.</p>
+            <p>The bartender said "Hey! What do you know? We have a drink named after you!"</p>
+            <p>The grasshopper said, "Really? You have a drink named Carl?"</p>
+            <img id="grasshopper" src="https://cdn.pixabay.com/photo/2013/07/12/17/38/grasshopper-152127_960_720.png" alt="grasshopper">
+        </section>
+
+        <section class="column">
+            <img id="general" src="https://freesvg.org/img/ComicCharacter274.png" alt="army general">
+            <h2>Joke 2</h2>
+            <h3>Military personnel</h3>
+            <p>Q: Where does a general keep his armies?</p>
+            <p>A: In his sleevies!</p>
+        </section>
+
+        <section class="column">
+            <h2>Joke 3</h2>
+            <h3>Free falling</h3>
+            <p>You don't need a parachute to go skydiving...</p>
+            <p>You need a parachute to go skydiving twice.</p>
+            <img id="parachute" src="https://cdn.pixabay.com/photo/2019/11/19/16/52/parachute-4637905_960_720.png" alt="parachute">
+         </section>
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="mailto:cornta@yahoo.com" target="_blank">Email Courtney</a>
+                <li><a href="https://www.linkedin.com/in/courtney-hans" target="_blank">My LinkedIn</a></li>
+                <li><a href="https://bestlifeonline.com/dad-jokes-so-bad-theyre-actually-hilarious/"
+                        target="_blank">More Bad Jokes</a></li>
+                <li id="copy">&copy; 2020 CHans</li>
+            </ul>
+        </nav>
+    </footer>
 
 </body>
+
 </html>
