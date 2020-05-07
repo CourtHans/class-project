@@ -1,13 +1,14 @@
 function askName() {
     var userName = prompt('What is your preferred name?');
 
-    return document.write('<h3> Hello ' + userName + ',</h3>');
+    return userName;
 }
 
 function niceGreeting() {
     var today = new Date();
     var hourNow = today.getHours();
     var greeting;
+    var userName = askName();
 
     if (hourNow > 18) {
         greeting = 'good evening!';
@@ -19,7 +20,7 @@ function niceGreeting() {
         greeting = 'welcome to my joke site!';
     }
 
-    return document.write('<h3>' + greeting + '</h3>');
+    return document.write('<h3> Hello ' + userName + ', ' + greeting + '</h3>');
 }
 
 function likeJokes() {
